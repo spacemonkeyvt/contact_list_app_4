@@ -39,7 +39,13 @@ end
 
 
 ### - UPDATE contacts #############################################
-# post '/contacts/edit/:id' do
+post '/contacts/update' do
+
+
+end
+
+
+#post '/contacts/edit/:id' do
 #   @contact = Contact.find(params[:id])
 #   data = params.slice('firstname', 'lastname', 'email')
 #   @contact.update(data)
@@ -60,10 +66,3 @@ post '/contacts/delete' do
   puts @contact
   @contact.destroy
 end
-
-# post '/contacts/delete/:id' do
-#   @contact = Contact.find(params[:id])
-
-#   @contact.destroy
-
-# end

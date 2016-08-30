@@ -8,10 +8,22 @@ $(document).ready(function() {
     },
     success: function(data) {
       $.each(data, function(index, element) {
-        $('tbody').append(`<tr><td>${element.firstname}</td> <td>${element.lastname}</td> <td>${element.email}</td> </tr>`)
+        $('tbody').append(`<tr class='row'><td>${element.firstname}</td> <td>${element.lastname}</td> <td>${element.email}</td> </tr>`)
       });
     }
   });
+
+  // ##################################################################
+
+  $('.row').click();
+
+  // $('.row').on('click', update_cb);
+
+  // function  update_cb(ev) {
+  //   ev.preventDefault();
+  // }
+
+
 
 
   // ##################################################################
